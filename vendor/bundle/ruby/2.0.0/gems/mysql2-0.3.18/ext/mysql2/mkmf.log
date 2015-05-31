@@ -1,0 +1,229 @@
+have_header: checking for ruby/thread.h... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32 conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -m32  -m32   -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"gcc -E -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby/thread.h>
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_call_without_gvl() in ruby/thread.h... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32 conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -m32  -m32   -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <ruby/thread.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_without_gvl; return 0; }
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     printf("%p", &t);
+12:   }
+13: 
+14:   return 0;
+15: }
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_blocking_region()... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32 conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -m32  -m32   -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5:1: warning: ‘rb_thread_blocking_region’ is deprecated (declared at /home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/intern.h:841) [-Wdeprecated-declarations]
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
+ ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+--------------------
+
+have_func: checking for rb_wait_for_single_fd()... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32 conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -m32  -m32   -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5:57: error: ‘rb_wait_for_single_fd’ undeclared (first use in this function)
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_wait_for_single_fd; return 0; }
+                                                         ^
+conftest.c:5:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_wait_for_single_fd; return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32 conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -m32  -m32   -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { rb_wait_for_single_fd(); return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+--------------------
+
+have_func: checking for rb_hash_dup()... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32 conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -m32  -m32   -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_hash_dup; return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+--------------------
+
+have_func: checking for rb_intern3()... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32 conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -m32  -m32   -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5:57: error: ‘rb_intern3’ undeclared (first use in this function)
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_intern3; return 0; }
+                                                         ^
+conftest.c:5:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_intern3; return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32 conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -m32  -m32   -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { rb_intern3(); return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+--------------------
+
+have_header: checking for mysql.h... -------------------- yes
+
+"gcc -E -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rubystack-2.0.0-26/mysql/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <mysql.h>
+/* end */
+
+--------------------
+
+have_header: checking for errmsg.h... -------------------- yes
+
+"gcc -E -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rubystack-2.0.0-26/mysql/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <errmsg.h>
+/* end */
+
+--------------------
+
+have_header: checking for mysqld_error.h... -------------------- yes
+
+"gcc -E -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rubystack-2.0.0-26/mysql/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <mysqld_error.h>
+/* end */
+
+--------------------
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rubystack-2.0.0-26/mysql/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32 conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -m32  -m32  -L/home/ahmed/rubystack-2.0.0-26/mysql/lib -lmysqlclient -lpthread -lm -lrt -ldl  -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static  -Wall -funroll-loops -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+

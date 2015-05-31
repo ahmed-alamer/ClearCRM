@@ -1,0 +1,643 @@
+have_header: checking for iconv.h... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32   -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"gcc -E -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <iconv.h>
+/* end */
+
+--------------------
+
+have_func: checking for iconv_open() in iconv.h... -------------------- no
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32   -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:7:32: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))iconv_open; return 0; }
+                                ^
+/tmp/ccA9vMsS.o: In function `t':
+/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ext/nokogiri/conftest.c:7: undefined reference to `libiconv_open'
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <iconv.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int t(void) { void ((*volatile p)()); p = (void ((*)()))iconv_open; return 0; }
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     printf("%p", &t);
+12:   }
+13: 
+14:   return 0;
+15: }
+/* end */
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32   -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:7:1: error: too few arguments to function ‘libiconv_open’
+ int t(void) { iconv_open(); return 0; }
+ ^
+In file included from conftest.c:3:0:
+/home/ahmed/rubystack-2.0.0-26/common/include/iconv.h:71:20: note: declared here
+ #define iconv_open libiconv_open
+                    ^
+/home/ahmed/rubystack-2.0.0-26/common/include/iconv.h:73:16: note: in expansion of macro ‘iconv_open’
+ extern iconv_t iconv_open (const char* tocode, const char* fromcode);
+                ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <iconv.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int t(void) { iconv_open(); return 0; }
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     printf("%p", &t);
+12:   }
+13: 
+14:   return 0;
+15: }
+/* end */
+
+--------------------
+
+have_library: checking for iconv_open() in -liconv... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32   -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static -liconv  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:7:32: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))iconv_open; return 0; }
+                                ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <iconv.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int t(void) { void ((*volatile p)()); p = (void ((*)()))iconv_open; return 0; }
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     printf("%p", &t);
+12:   }
+13: 
+14:   return 0;
+15: }
+/* end */
+
+--------------------
+
+have_library: checking for main() in -llzma... -------------------- no
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32   -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static -llzma  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:5:57: error: ‘main’ undeclared (first use in this function)
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+                                                         ^
+conftest.c:5:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:32: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+                                ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32   -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static -llzma  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:5:1: warning: implicit declaration of function ‘main’ [-Wimplicit-function-declaration]
+ int t(void) { main(); return 0; }
+ ^
+/usr/bin/ld: cannot find -llzma
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { main(); return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+--------------------
+
+have_func: checking for xmlParseDoc() in libxml/parser.h... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:7:32: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlParseDoc; return 0; }
+                                ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <libxml/parser.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlParseDoc; return 0; }
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     printf("%p", &t);
+12:   }
+13: 
+14:   return 0;
+15: }
+/* end */
+
+--------------------
+
+have_func: checking for xsltParseStylesheetDoc() in libxslt/xslt.h... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:7:57: error: ‘xsltParseStylesheetDoc’ undeclared (first use in this function)
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xsltParseStylesheetDoc; return 0; }
+                                                         ^
+conftest.c:7:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:7:32: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xsltParseStylesheetDoc; return 0; }
+                                ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <libxslt/xslt.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int t(void) { void ((*volatile p)()); p = (void ((*)()))xsltParseStylesheetDoc; return 0; }
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     printf("%p", &t);
+12:   }
+13: 
+14:   return 0;
+15: }
+/* end */
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:7:1: warning: implicit declaration of function ‘xsltParseStylesheetDoc’ [-Wimplicit-function-declaration]
+ int t(void) { xsltParseStylesheetDoc(); return 0; }
+ ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <libxslt/xslt.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int t(void) { xsltParseStylesheetDoc(); return 0; }
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     printf("%p", &t);
+12:   }
+13: 
+14:   return 0;
+15: }
+/* end */
+
+--------------------
+
+have_func: checking for exsltFuncRegister() in libexslt/exslt.h... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:7:32: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))exsltFuncRegister; return 0; }
+                                ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <libexslt/exslt.h>
+ 4: 
+ 5: /*top*/
+ 6: extern int t(void);
+ 7: int t(void) { void ((*volatile p)()); p = (void ((*)()))exsltFuncRegister; return 0; }
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     printf("%p", &t);
+12:   }
+13: 
+14:   return 0;
+15: }
+/* end */
+
+--------------------
+
+have_func: checking for xmlHasFeature()... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:5:57: error: ‘xmlHasFeature’ undeclared (first use in this function)
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlHasFeature; return 0; }
+                                                         ^
+conftest.c:5:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:32: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlHasFeature; return 0; }
+                                ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlHasFeature; return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:5:1: warning: implicit declaration of function ‘xmlHasFeature’ [-Wimplicit-function-declaration]
+ int t(void) { xmlHasFeature(); return 0; }
+ ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { xmlHasFeature(); return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+--------------------
+
+have_func: checking for xmlFirstElementChild()... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:5:57: error: ‘xmlFirstElementChild’ undeclared (first use in this function)
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlFirstElementChild; return 0; }
+                                                         ^
+conftest.c:5:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:32: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlFirstElementChild; return 0; }
+                                ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlFirstElementChild; return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:5:1: warning: implicit declaration of function ‘xmlFirstElementChild’ [-Wimplicit-function-declaration]
+ int t(void) { xmlFirstElementChild(); return 0; }
+ ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { xmlFirstElementChild(); return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetParserStructuredErrors()... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:5:57: error: ‘xmlRelaxNGSetParserStructuredErrors’ undeclared (first use in this function)
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return 0; }
+                                                         ^
+conftest.c:5:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:32: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return 0; }
+                                ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:5:1: warning: implicit declaration of function ‘xmlRelaxNGSetParserStructuredErrors’ [-Wimplicit-function-declaration]
+ int t(void) { xmlRelaxNGSetParserStructuredErrors(); return 0; }
+ ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { xmlRelaxNGSetParserStructuredErrors(); return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetParserStructuredErrors()... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:5:57: error: ‘xmlRelaxNGSetParserStructuredErrors’ undeclared (first use in this function)
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return 0; }
+                                                         ^
+conftest.c:5:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:32: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return 0; }
+                                ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:5:1: warning: implicit declaration of function ‘xmlRelaxNGSetParserStructuredErrors’ [-Wimplicit-function-declaration]
+ int t(void) { xmlRelaxNGSetParserStructuredErrors(); return 0; }
+ ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { xmlRelaxNGSetParserStructuredErrors(); return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetValidStructuredErrors()... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:5:57: error: ‘xmlRelaxNGSetValidStructuredErrors’ undeclared (first use in this function)
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetValidStructuredErrors; return 0; }
+                                                         ^
+conftest.c:5:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:32: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetValidStructuredErrors; return 0; }
+                                ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetValidStructuredErrors; return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:5:1: warning: implicit declaration of function ‘xmlRelaxNGSetValidStructuredErrors’ [-Wimplicit-function-declaration]
+ int t(void) { xmlRelaxNGSetValidStructuredErrors(); return 0; }
+ ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { xmlRelaxNGSetValidStructuredErrors(); return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+--------------------
+
+have_func: checking for xmlSchemaSetValidStructuredErrors()... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:5:57: error: ‘xmlSchemaSetValidStructuredErrors’ undeclared (first use in this function)
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetValidStructuredErrors; return 0; }
+                                                         ^
+conftest.c:5:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:32: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetValidStructuredErrors; return 0; }
+                                ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetValidStructuredErrors; return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:5:1: warning: implicit declaration of function ‘xmlSchemaSetValidStructuredErrors’ [-Wimplicit-function-declaration]
+ int t(void) { xmlSchemaSetValidStructuredErrors(); return 0; }
+ ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { xmlSchemaSetValidStructuredErrors(); return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+--------------------
+
+have_func: checking for xmlSchemaSetParserStructuredErrors()... -------------------- yes
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:5:57: error: ‘xmlSchemaSetParserStructuredErrors’ undeclared (first use in this function)
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetParserStructuredErrors; return 0; }
+                                                         ^
+conftest.c:5:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:32: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+ int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetParserStructuredErrors; return 0; }
+                                ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetParserStructuredErrors; return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+"gcc -o conftest -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/i686-linux -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0/ruby/backward -I/home/ahmed/rubystack-2.0.0-26/ruby/include/ruby-2.0.0 -I. -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/include/libxml2 -I/home/ahmed/rubystack-2.0.0-26/common/include -DAI_ADDRCONFIG=0 -I/bitnami/rubystack-linux/output/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/sasl -I/home/ahmed/rubystack-2.0.0-26/common/include -D_FILE_OFFSET_BITS=64  -DNOKOGIRI_LIBXML2_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0\" -DNOKOGIRI_LIBXSLT_PATH\=\"/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28\" -m32 -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include -I/home/ahmed/rubystack-2.0.0-26/common/include/ImageMagick -I/home/ahmed/rubystack-2.0.0-26/common/include  -I/home/ahmed/rubystack-2.0.0-26/sqlite/include -I/home/ahmed/rubystack-2.0.0-26/varnish/include -I/home/ahmed/rubystack-2.0.0-26/mysql/include -I/home/ahmed/rubystack-2.0.0-26/postgresql/include -I/home/ahmed/rubystack-2.0.0-26/apache2/include -I/home/ahmed/rubystack-2.0.0-26/subversion/include -I/home/ahmed/rubystack-2.0.0-26/common/include -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES conftest.c  -L. -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib -L/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -Wl,-R/home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib -L/home/ahmed/rubystack-2.0.0-26/common/lib -Wl,-R/home/ahmed/rubystack-2.0.0-26/common/lib -m32  -m32  /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -Wl,-R -Wl,/home/ahmed/rubystack-2.0.0-26/ruby/lib -L/home/ahmed/rubystack-2.0.0-26/ruby/lib -lruby-static /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libexslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxslt/1.1.28/lib/libxslt.a -lm -liconv -lz /home/ahmed/rails/ClearCRM/vendor/bundle/ruby/2.0.0/gems/nokogiri-1.6.2.1/ports/i686-pc-linux-gnu/libxml2/2.8.0/lib/libxml2.a -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function ‘t’:
+conftest.c:5:1: warning: implicit declaration of function ‘xmlSchemaSetParserStructuredErrors’ [-Wimplicit-function-declaration]
+ int t(void) { xmlSchemaSetParserStructuredErrors(); return 0; }
+ ^
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int t(void) { xmlSchemaSetParserStructuredErrors(); return 0; }
+ 6: int main(int argc, char **argv)
+ 7: {
+ 8:   if (argc > 1000000) {
+ 9:     printf("%p", &t);
+10:   }
+11: 
+12:   return 0;
+13: }
+/* end */
+
+--------------------
+
