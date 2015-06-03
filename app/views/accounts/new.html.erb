@@ -1,0 +1,26 @@
+<div class="panel panel-success">
+	  <div class="panel-heading">
+			<h3 class="panel-title">New Account</h3>
+	  </div>
+	  <div class="panel-body">
+			<%= form_for :account, layout: :horizontal, :url => {:action => "create"} do |f| %>
+				<%= f.text_field :name %>
+				<%= f.text_area :description %>
+				<%= f.text_field :industry %>
+				<%= f.text_field :annual_revenue %>
+				<%= f.text_field :phone %>
+				<%= f.text_field :fax %>
+				<%= f.text_field :rating %>
+				<%= f.text_field :employees %>
+				<%= f.text_field :ticker_symbol %>
+				<%= f.text_area :billing_address %>
+				<%= f.text_area :shipping_address %>
+				<div class="form-group">
+					<div class="col-sm-offset-3 col-sm-9"> <!-- Matches the helprs output markup, check the docs -->
+						<input class="btn btn-success" name="commit" type="submit" value="Create"/>
+						<%= link_to("Cancel", {:action => "index"}, :class => "btn btn-danger") %>
+					</div>
+				</div>
+			<% end %>
+	  </div>
+</div>
