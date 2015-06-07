@@ -1,0 +1,131 @@
+<div class="panel panel-primary">
+	  <div class="panel-heading">
+			<h3 class="panel-title">Account Information</h3>
+	  </div>
+	  <div class="panel-body">
+		  <div class="col-md-6">
+				<div class="form-group">
+					<label class="col-sm-3 control-label">ID</label>
+					<div class="com-sm-7">
+						<div class="form-control-static">
+							<%= @account.id %>
+						</div>
+					</div>
+				</div>  	
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Name</label>
+					<div class="com-sm-7">
+						<div class="form-control-static">
+							<%= @account.name %>
+						</div>
+					</div>
+				</div>  	
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Description</label>
+					<div class="com-sm-7">
+						<div class="form-control-static">
+							<%= @account.description %>
+						</div>
+					</div>
+				</div>  	
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Rating</label>
+					<div class="com-sm-7">
+						<div class="form-control-static">
+							<%= @account.rating %>
+						</div>
+					</div>
+				</div>  	
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Employees</label>
+					<div class="com-sm-7">
+						<div class="form-control-static">
+							<%= @account.employees %>
+						</div>
+					</div>
+				</div>  	
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Annual Revenue</label>
+					<div class="com-sm-7">
+						<div class="form-control-static">
+							<%= @account.annual_revenue %>
+						</div>
+					</div>
+				</div>  	
+				<div class="form-group">
+					<label class="col-sm-3 control-label">Ticker Symbol</label>
+					<div class="com-sm-7">
+						<div class="form-control-static">
+							<%= @account.ticker_symbol %>
+						</div>
+					</div>
+				</div>  	
+		  </div>
+		  <div class="col-md-6">
+		  	<div class="form-group">
+		  		<label class="col-sm-3 control-label">Phone</label>
+		  		<div class="form-control-static">
+		  			<%= @account.phone %>
+		  		</div>
+		  	</div>
+		  	<div class="form-group">
+		  		<label class="col-sm-3 control-label">Fax</label>
+		  		<div class="form-control-static">
+		  			<%= @account.fax %>
+		  		</div>
+		  	</div>
+		  	<div class="form-group">
+		  		<label class="col-sm-3 control-label">Billing Address</label>
+		  		<div class="form-control-static">
+		  			<%= @account.billing_address %>
+		  		</div>
+		  	</div>
+		  	<div class="form-group">
+		  		<label class="col-sm-3 control-label">Shipping Address</label>
+		  		<div class="form-control-static">
+		  			<%= @account.shipping_address %>
+		  		</div>
+		  	</div>
+		  </div>
+	  </div>
+</div>
+<div class="panel panel-default">
+	<!-- Default panel contents -->
+	<div class="panel-heading">Contacts</div>
+		<div class="panel-body">
+		<div class="pull-right">
+			<%= link_to "New Contact", {:action => "new"} %>
+		</div>
+		</div>
+
+		<!-- Table -->
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Work Phone</th>
+					<th>Cell Phone</th>
+					<th>Dont' Call</th>
+					<th>Assistant</th>
+					<th>Assistant Phone</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<% @contacts.each do |contact| %>
+					<tr>
+						<td><%= contact.name %></td>
+						<td><%= contact.work_phone %></td>
+						<td><%= contact.cell_phone %></td>
+						<td><%= contact.do_not_call ? "Yes" : "No" %></td>
+						<td><%= contact.assistant %></td>
+						<td><%= contact.assistant_phone %></td>
+						<td>
+							<%= link_to("Edit", {:controller => "contacts", :action => "edit", :id => contact.id}) %>
+							<%= link_to("Show", {:controller => "contacts", :action => "show", :id => contact.id}) %>
+						</td>						
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+</div>

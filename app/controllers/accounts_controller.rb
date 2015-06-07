@@ -5,7 +5,8 @@ class AccountsController < ApplicationController
   end
 
   def show
-  	
+  	@account = Account.find(params[:id])
+    @contacts = @account.contacts
   end
 
   def new
@@ -24,6 +25,17 @@ class AccountsController < ApplicationController
   end
 
   def edit
+    @account = Account.find(params[:id])
+  end
+
+  def update
+    @account = Account.new(account_params)
+    if @account.save
+      flash[:notice] = "Account '#{@account.name}' was successfully created"
+      redirect_to(:action => "index")
+    else
+      render("edit")
+    end
   end
 
   private

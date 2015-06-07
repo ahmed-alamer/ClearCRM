@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  # get 'contacts/index'
+
+  # get 'contacts/new'
+
+  # get 'contacts/edit'
+
+  # get 'contacts/show'
+
   # get 'accounts/index'
 
   # get 'accounts/new'
@@ -6,7 +14,8 @@ Rails.application.routes.draw do
   # get 'accounts/edit'
 
   resources :accounts
-
+  resources :contacts
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
