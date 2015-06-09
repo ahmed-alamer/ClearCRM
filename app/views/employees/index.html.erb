@@ -1,0 +1,47 @@
+<div class="panel panel-default">
+	<!-- Default panel contents -->
+	<div class="panel-heading">Employees</div>
+		<div class="panel-body">
+			<div class="pull-right">
+				<%= link_to "New Employee", {:action => "new"}, :class => "btn btn-success" %>
+			</div>
+		</div>
+
+		<%= generate_model_table_advanced :model => @employees, :attributes => [:id, :first_name, :last_name, :job_title], :actions => {"Edit" => {:action => "edit", :attribute => :id}, "Show" => {:action => "show", :attribute => "id"}} %>
+		<!-- Table -->
+		<!-- <%= genearte_model_table @employees, :id, :first_name, :last_name, :job_title %> -->
+	<!-- 	<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>User Type</th>
+					<th>Job Title</th>
+					<th>Department</th>
+					<th>Email</th>
+					<th>Phone Ext.</th>
+					<th>Cell Phone</th>
+					<th>Active</th>
+					<th></th>
+			</thead>
+			<tbody>
+				<% @employees.each do |employee| %>
+					<tr>
+						<td><%= employee.id %></td>
+						<td><%= employee.first_name + " " + employee.last_name %></td>
+						<td><%= employee.user_type %></td>
+						<td><%= employee.job_title %></td>
+						<td><%= employee.department %></td>
+						<td><%= employee.email %></td>
+						<td><%= employee.phone_extension %></td>
+						<td><%= employee.cell_phone %></td>
+						<td><%= employee.active ? "Yes" : "No" %></td>
+						<td>
+							<%= link_to "Edit", {:action => "edit", :id => employee.id} %>
+							<%= link_to "View", {:action => "show", :id => employee.id} %>
+						</td>
+					</tr>
+				<% end %>
+			</tbody>
+		</table> -->
+</div>

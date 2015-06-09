@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150607030727) do
+ActiveRecord::Schema.define(version: 20150609172744) do
 
   create_table "accounts", force: :cascade do |t|
     t.string   "name",             limit: 255
@@ -38,6 +38,8 @@ ActiveRecord::Schema.define(version: 20150607030727) do
     t.text     "notes",          limit: 65535
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
+    t.integer  "employee_id",    limit: 4
+    t.integer  "contact_id",     limit: 4
   end
 
   create_table "cases", force: :cascade do |t|
@@ -52,6 +54,8 @@ ActiveRecord::Schema.define(version: 20150607030727) do
     t.text     "work_log",    limit: 65535
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+    t.integer  "employee_id", limit: 4
+    t.integer  "contact_id",  limit: 4
   end
 
   create_table "contacts", force: :cascade do |t|
@@ -78,12 +82,12 @@ ActiveRecord::Schema.define(version: 20150607030727) do
     t.string   "subject",     limit: 255
     t.string   "status",      limit: 255
     t.string   "intent",      limit: 255
-    t.string   "to",          limit: 255
     t.text     "cc",          limit: 65535
     t.text     "bcc",         limit: 65535
-    t.string   "from",        limit: 255
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+    t.integer  "employee_id", limit: 4
+    t.integer  "contact_id",  limit: 4
   end
 
   create_table "employees", force: :cascade do |t|
@@ -93,7 +97,6 @@ ActiveRecord::Schema.define(version: 20150607030727) do
     t.string   "first_name",      limit: 255
     t.string   "last_name",       limit: 255
     t.boolean  "admin",           limit: 1
-    t.text     "description",     limit: 65535
     t.string   "job_title",       limit: 255
     t.string   "department",      limit: 255
     t.integer  "cell_phone",      limit: 4
@@ -102,10 +105,11 @@ ActiveRecord::Schema.define(version: 20150607030727) do
     t.boolean  "active",          limit: 1
     t.string   "email",           limit: 255
     t.string   "messenger_id",    limit: 255
-    t.string   "messgner_type",   limit: 255
+    t.string   "messenger_type",  limit: 255
     t.integer  "reports_to",      limit: 4
     t.datetime "created_at",                    null: false
     t.datetime "updated_at",                    null: false
+    t.integer  "phone_extension", limit: 4
   end
 
   create_table "meetings", force: :cascade do |t|
@@ -128,11 +132,13 @@ ActiveRecord::Schema.define(version: 20150607030727) do
   end
 
   create_table "notes", force: :cascade do |t|
-    t.string   "title",      limit: 255
-    t.text     "content",    limit: 65535
-    t.text     "tags",       limit: 65535
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.string   "title",       limit: 255
+    t.text     "content",     limit: 65535
+    t.text     "tags",        limit: 65535
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.integer  "employee_id", limit: 4
+    t.integer  "contact_id",  limit: 4
   end
 
   create_table "opportunities", force: :cascade do |t|
@@ -147,6 +153,15 @@ ActiveRecord::Schema.define(version: 20150607030727) do
     t.float    "probability",      limit: 24
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string   "name",        limit: 255
+    t.string   "description", limit: 255
+    t.string   "category",    limit: 255
+    t.string   "source",      limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
 end

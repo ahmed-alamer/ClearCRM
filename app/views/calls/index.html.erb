@@ -1,0 +1,54 @@
+<div class="panel panel-primary">
+	<!-- Default panel contents -->
+	<div class="panel-heading">Calls</div>
+		<div class="panel-body">
+			<div class="pull-right">
+				<% link_to "New Call", {:action => "new"} %>
+			</div>
+		</div>
+
+		<!-- Table -->
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Title</th>
+					<th>Duration</th>
+					<th>Date</th>
+					<th>Direction</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% @calls.each do |call| %>
+					<tr>
+						<td><%= call.id %></td>
+						<td><%= call.title %></td>
+						<td><%= call.duration_hour %></td>
+						<td><%= call.call_date %></td>
+						<td><%= call.direction %></td>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+		<%=
+		  # collection_table(@calls, :id => 'callsTable', :class => 'table table-hover') do |t|
+		  #   t.header :id
+		  #   t.header :title
+		  #   t.header :duration_hour, 'Duration'
+		  #   t.header :call_date, 'Date'
+		  #   t.header :direction
+
+		  #   # t.rows.alternate = :odd
+		  #   t.rows.each do |row, call, index|
+		  #     # Notice there's no need to explicitly define the title
+		  #     row.id, call.id
+		  #     row.title, call.title
+		  #     row.duration_hour, call.duration_hour
+		  #     row.call_date, call.call_date
+		  #     row.direction, call.direction
+		  #   end
+		  #   # t.footer :num_comments, @posts.inject(0) {|sum, post| sum += post.comments.size}
+		  #   # t.footer :num_trackbacks, @posts.inject(0) {|sum, post| sum += post.trackbacks.size}
+		  # end
+		%>
+</div>

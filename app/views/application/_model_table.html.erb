@@ -1,0 +1,23 @@
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<% attributes.each do |attribute| %>
+				<th><%= generate_label attribute %></th>
+			<% end %>
+		</tr>
+	</thead>
+	<tbody>
+		<% object_list.each do |object| %>
+			<tr>
+				<% attributes.each do |attribute| %>
+					<td><%= object[attribute] %></td>
+				<% end %>
+				<td>
+					<% actions.each do |label, properties| %>
+						<%= link_to label, {:action => properties[:action], properties[:attribute] => object.send(properties[:attribute])} %> 
+					<% end %>
+				</td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

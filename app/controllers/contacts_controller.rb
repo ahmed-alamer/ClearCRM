@@ -3,8 +3,7 @@ class ContactsController < ApplicationController
   # before_action :set_account_id
 
   def index
-    set_account_id
-  	@contacts = Account.find(@account_id).contacts
+  	@contacts = Contact.all
   end
 
   def new

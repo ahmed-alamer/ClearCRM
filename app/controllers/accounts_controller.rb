@@ -29,8 +29,8 @@ class AccountsController < ApplicationController
   end
 
   def update
-    @account = Account.new(account_params)
-    if @account.save
+    @account = Account.find(params[:id])
+    if @account.update_attributes(account_params)
       flash[:notice] = "Account '#{@account.name}' was successfully created"
       redirect_to(:action => "index")
     else

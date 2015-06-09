@@ -26,10 +26,12 @@
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="#">Accounts</a></li>
-			<li><a href="#">Contacts</a></li>
-			<li><a href="#">Opprotunities</a></li>
-			<li><a href="#">Action Center</a></li>
+			<li><%= link_to "Accounts", {:controller => "accounts", :action => "index"} %></li>
+			<li><%= link_to "Contacts", {:controller => "contacts", :action => "index"} %></li>
+			<li><a href="#">Oppotunites</a></li>
+			<li><a href="#">Activities</a></li>
+			<li><%= link_to "Products", {:controller => "products", :action => "index"} %></li>
+			<li><%= link_to "Employees", {:controller => "employees", :action => "index"} %></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<li class="dropdown">

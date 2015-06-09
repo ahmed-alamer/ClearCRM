@@ -17,6 +17,10 @@ gem 'coffee-rails', '~> 4.1.0'
 #bootstrap helpers
 gem 'bh', '~> 1.3.3'
 
+#table helpers
+# gem 'table_helper', '~> 0.2.2'
+# gem 'blankslate', '~> 3.1.3'  # table helper dependency
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
