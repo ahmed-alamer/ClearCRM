@@ -14,7 +14,7 @@
 				<% end %>
 				<td>
 					<% actions.each do |label, properties| %>
-						<%= link_to label, {:action => properties[:action], properties[:attribute] => object.send(properties[:attribute])} %> 
+						 <%= link_to label, {:action => properties[:action], properties[:attribute] => object.send(properties[:attribute])} %>
 					<% end %>
 				</td>
 			</tr>

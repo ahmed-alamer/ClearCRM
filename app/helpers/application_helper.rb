@@ -1,10 +1,7 @@
 module ApplicationHelper
 	
-	def genearte_model_table(model, *attributes)
-		render :partial => "model_table", :locals => {:object_list => model, :attributes => attributes}
-	end
-
-	def generate_model_table_advanced(parameters)
+	def genearte_model_table(parameters)
+		puts parameters[:actions]
 		render :partial => "model_table", :locals => {:object_list => parameters[:model], :attributes => parameters[:attributes], :actions => parameters[:actions]}
 	end
 
