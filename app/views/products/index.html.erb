@@ -7,31 +7,9 @@
 				<%= link_to "New Product", {:action => "new"}, :class => "btn btn-success" %>
 			</div>
 	  </div>
-		<table class="table table-hover">
-			<thead>
-				<tr>
-					<th>ID</th>
-					<th>Name</th>
-					<th>Category</th>
-					<th>Source</th>
-					<th></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<% @products.each do |product| %>
-						<tr>
-							<td><%= product.id %></td>
-							<td><%= product.name %></td>
-							<td><%= product.category %></td>
-							<td><%= product.source %></td>
-							<td>
-								<%= link_to "Edit", {:action => "edit", :id => product.id} %>
-								<%= link_to "View", {:action => "show", :id => product.id} %>
-							</td>
-						</tr>
-					<% end %>
-				</tr>
-			</tbody>
-		</table>
+	  <%= generate_model_table @products do |t| %>
+	  	<% t.display_columns :id, :name, :category, :source %>
+	  	<% t.add_action :label => "Details", :action => {:method => "show", :param => "id"} %>
+	  	<% t.add_action :label => "Edit", :action => {:method => "edit", :param => "id"} %>
+	  <% end %>
 </div>

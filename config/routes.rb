@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
-  get 'calls/index'
+  # get 'meetings/index'
 
-  get 'calls/new'
+  # get 'meetings/show'
 
-  get 'calls/show'
+  # get 'meetings/new'
+
+  # get 'calls/index'
+
+  # get 'calls/new'
+
+  # get 'calls/show'
 
   # get 'products/index'
 
@@ -39,7 +45,8 @@ Rails.application.routes.draw do
   resources :contacts
   resources :employees
   resources :products
-  
+	resources :calls  
+  resources :meetings
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

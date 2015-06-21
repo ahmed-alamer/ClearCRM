@@ -1,0 +1,14 @@
+<div class="panel panel-default">
+	<!-- Default panel contents -->
+	<div class="panel-heading">Meetings</div>
+		<div class="panel-body">
+			<div class="pull-right">
+				<%= link_to "New Meeting", {:action => "new"}, :class => "btn btn-primary" %>
+			</div>
+		</div>
+		<%= generate_model_table @meetings do |t| %>
+			<% t.display_columns :title, :meeting_date, :meeting_time, :duration, :status, :location %>
+			<% t.add_action :label => "Details", :action => {:method => "show", :param => "id"} %>
+			<% t.add_action :label => "Update", :action => {:method => "edit", :param => "id"} %>
+		<% end %>
+</div>

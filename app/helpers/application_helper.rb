@@ -1,8 +1,28 @@
 module ApplicationHelper
+
+	class TableTag
+		
+		def initialize
+			@actions = Array.new
+			@attributes = nil
+		end
+
+		def display_columns(*columns)
+			@attributes = columns
+		end
+
+		def add_action(action_hash)
+			@actions << action_hash
+		end
+
+		attr_accessor :attributes, :actions
+		
+	end
 	
-	def genearte_model_table(parameters)
-		puts parameters[:actions]
-		render :partial => "model_table", :locals => {:object_list => parameters[:model], :attributes => parameters[:attributes], :actions => parameters[:actions]}
+	def generate_model_table(model)
+		table_object = TableTag.new
+		yield table_object
+		render :partial => "model_table", :locals => {:model_array => model, :attributes => table_object.attributes, :actions => table_object.actions}
 	end
 
 	def camel_case(word) 

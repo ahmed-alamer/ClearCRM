@@ -7,14 +7,14 @@
 		</tr>
 	</thead>
 	<tbody>
-		<% object_list.each do |object| %>
+		<% model_array.each do |object| %>
 			<tr>
 				<% attributes.each do |attribute| %>
 					<td><%= object[attribute] %></td>
 				<% end %>
 				<td>
-					<% actions.each do |label, properties| %>
-						 <%= link_to label, {:action => properties[:action], properties[:attribute] => object.send(properties[:attribute])} %>
+					<% actions.each do |item_action| %>
+					<%= link_to item_action[:label], {:action => item_action[:action][:method], item_action[:action][:param] => object.send(item_action[:action][:param]) } %>
 					<% end %>
 				</td>
 			</tr>

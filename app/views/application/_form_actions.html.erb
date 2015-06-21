@@ -1,5 +1,9 @@
 <div class="form-group">
-	<div class="col-sm-offset-3 col-sm-9">
+		<% if not defined? form_layout %>
+			<div class="col-sm-offset-3 col-sm-9">
+		<% else %>
+			<div>
+		<% end %>
 		<%= submit_tag("Save", :class => "btn btn-success") %>
 		<%= link_to("Cancel", {:action => "index"}, :class => "btn btn-danger") %>
 	</div>

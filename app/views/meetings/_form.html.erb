@@ -1,0 +1,24 @@
+<div class="row">
+	<div class="col-md-6">
+		<%= f.text_field :title %>
+		<%= f.text_field :meeting_time %>
+		<%= f.text_field :meeting_date, :label => "Date" %>
+		<%= f.text_field :duration %>
+		<%= f.text_field :location %>
+		<%= f.text_field :meeting_type %>
+		<%= f.text_field :status %>
+		<%= f.text_field :creator %>
+	</div>
+	<div class="col-md-6">
+		<%= f.text_field :reminder %>
+		<%= f.text_field :join_url, :label => "Join URL" %>
+		<%= f.text_field :host_url, :label => "Host URL" %>
+		<%= f.text_field :external_id, :label => "External ID" %>
+		<%= f.text_field :email_reminder, :label => "Email Reminder Time" %>
+		<%= f.check_box :email_reminder_sent, :label => "Reminder Sent ?" %>
+		<%= f.text_area :log, :rows => 6, :label => "Meeting Log" %>	
+		<div class="pull-right">
+			<%= render :partial => "form_actions", :locals => {:form_layout => "basic"} %>
+		</div>
+	</div>
+</div>

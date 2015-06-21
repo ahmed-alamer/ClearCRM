@@ -1,2 +1,11 @@
-<h1>Calls#new</h1>
-<p>Find me in app/views/calls/new.html.erb</p>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">New Call</h3>
+  </div>
+  <div class="panel-body">
+    <%= form_for @call, layout: :basic, :url => {:action => "create"} do |f| %>
+      <%= render :partial => "form", :locals => {:f => f} %>
+    <% end %>     
+  </div>
+</div>
+

@@ -7,5 +7,9 @@
 			</div>
 		</div>
 
-		<%= genearte_model_table :model => @employees, :attributes => [:id, :first_name, :last_name, :job_title], :actions => {"Edit" => {:action => "edit", :attribute => :id}, "Show" => {:action => "show", :attribute => "id"}} %>
+		<%= generate_model_table @employees do |table|  %>
+			<% table.display_columns :id, :first_name, :last_name, :job_title %>
+			<% table.add_action :label => "Edit", :action => {:method => "edit", :param => "id"} %>
+			<% table.add_action :label => "Show", :action => {:method => "show", :param => "id"} %>
+		<% end %>
 </div>
