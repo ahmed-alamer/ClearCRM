@@ -3,8 +3,10 @@
 	<%= f.text_field :work_phone %>
 	<%= f.text_field :cell_phone %>
 	<%= f.check_box :do_not_call %>
-	<%= f.text_field :assistant %>
-	<%= f.text_field :assistant_phone %>
+	<%= f.fieldset "Assistant Info" do %>
+		<%= f.text_field :assistant %>
+		<%= f.text_field :assistant_phone %>
+	<% end %>
 </div>
 <div class="col-md-6">
 	<%= f.text_field :lead_source %>

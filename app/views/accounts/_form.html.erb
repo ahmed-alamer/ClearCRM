@@ -1,11 +1,18 @@
-<%= f.text_field :name %>
-<%= f.text_area :description %>
-<%= f.text_field :industry %>
-<%= f.text_field :annual_revenue %>
-<%= f.text_field :phone %>
-<%= f.text_field :fax %>
-<%= f.text_field :rating %>
-<%= f.text_field :employees %>
-<%= f.text_field :ticker_symbol %>
-<%= f.text_area :billing_address %>
-<%= f.text_area :shipping_address %>
+<div class="col-md-6">
+	<%= f.text_field :name %>
+	<%= f.text_area :description %>
+	<%= f.text_field :industry %>
+	<%= f.text_field :annual_revenue %>
+	<%= f.text_field :employees %>
+	<%= f.text_field :ticker_symbol %>
+</div>
+<div class="col-md-6">
+	<%= f.text_field :phone %>
+	<%= f.text_field :fax %>
+	<%= f.text_field :rating %>
+	<%= f.text_area :billing_address %>
+	<%= f.text_area :shipping_address %>
+	<div class="pull-right">
+		<%= render :partial => "form_actions", :locals => {:form_layout => "basic"} %>
+	</div>
+</div>
